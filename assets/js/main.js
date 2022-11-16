@@ -5,8 +5,8 @@ let ballSize = getComputedStyle(ball);
 div.onclick = function(event) {
     ballWidth = parseInt(ballSize.width) / 2;
     ballHeight = parseInt(ballSize.height) / 2;
-    Xcorr = event.clientX - ballWidth - div.offsetLeft - div.clientLeft;
-    Ycorr = event.clientY - ballHeight - div.offsetTop - div.clientTop;
+    Xcorr = event.pageX - ballWidth - div.offsetLeft - div.clientLeft;
+    Ycorr = event.pageY - ballHeight - div.offsetTop - div.clientTop;
     console.log(Xcorr)
     if (Xcorr > (div.clientWidth - ballWidth * 2) || Ycorr > (div.clientHeight - ballHeight * 2)) return;
 
