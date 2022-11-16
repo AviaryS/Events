@@ -1,5 +1,3 @@
-
-
 let div = document.getElementsByTagName('DIV')[0];
 let ball = div.querySelector('#ball');
 let ballSize = getComputedStyle(ball);
